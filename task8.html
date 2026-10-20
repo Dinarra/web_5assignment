@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Task 8 — To-Do App</title>
+  <link rel="stylesheet" href="css/style.css">
+  <style>
+    #taskInput {
+      padding: 10px;
+      font-size: 16px;
+      width: 300px;
+    }
+
+    #taskList {
+      list-style: none;
+      padding: 0;
+      margin-top: 20px;
+    }
+
+    #taskList li {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background: #fff;
+      padding: 10px 15px;
+      margin-bottom: 8px;
+      border-radius: 8px;
+      box-shadow: 0 1px 3px rgba(0, 0, 0, 0.15);
+    }
+
+    #taskList li span {
+      cursor: pointer;
+      flex: 1;
+    }
+
+    #taskList li.completed span {
+      text-decoration: line-through;
+      color: #999;
+    }
+  </style>
+</head>
+<body>
+  <nav class="navbar">
+    <a href="index.html">Task 0</a>
+    <a href="task1.html">Task 1</a>
+    <a href="task2.html">Task 2</a>
+    <a href="task3.html">Task 3</a>
+    <a href="task4.html">Task 4</a>
+    <a href="task5.html">Task 5</a>
+    <a href="task6.html">Task 6</a>
+    <a href="task7.html">Task 7</a>
+    <a href="task8.html">Task 8</a>
+  </nav>
+
+  <main class="container">
+    <h1>Task 8. To-Do App</h1>
+
+    <input type="text" id="taskInput" placeholder="Новая задача...">
+    <button id="addTaskBtn">Add Task</button>
+
+    <ul id="taskList"></ul>
+  </main>
+
+  <script src="js/task8.js"></script>
+</body>
+</html>
